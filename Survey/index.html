@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.5.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>A Survey About You</h1>
+      <h2>Tell us a little about yourself</h2>
+      <form id="formName">
+        <div class="form-group">
+          <label for="name">Your name:</label>
+          <input id="name" class="form-control" type="text">
+          <small id="nickname" class="form-text" text="muted">You can add a nickname or your full user-name</small>
+        </div>
+
+
+    <!-- SELECT BOXES -->
+
+    <div class="form-group">
+      <label for="fav-foodType">What is your favorite type of food?</label>
+      <select id="fav-foodType" name="favorite-meal" class="form-control">
+        <option>Hands</option>
+        <option>Fork</option>
+        <option>Chopsticks</option>
+        <option>Spoons</option>
+      </select>
+    </div>
+
+    <!-- RADIOS -->
+
+    <div class="form-group">
+      <p>How do you prefer your music?</p>
+    <div class="radio">
+      <label for="loud">
+        <input type="radio" name="music" id="loud" value="loud" checked>
+        Loud
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="music" id="soft" value="soft">
+        Soft
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="music" id="noisy" value="noisy">
+        Noisy
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="music" id="acid-jazz" value="acid-jazz">
+        Acid Jazz
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="color">What color is least offensive to you?</label>
+      <input id="color" name="color" type="color">
+    </div>
+    </div>
+
+    <!-- <div class="form-group">
+      <label for="color">What color is least offensive to you?</label>
+      <input id="color" class="form-control" type="color">
+    </div>
+    </div> -->
+
+    <button type="submit" class="btn">Submit Survey</button>
+  <form>
+<!-- 
+    HIDDEN RESULTS TO BE SHOWN -->
+
+    <div class="results">
+      <h2>Thank you for your submission!</h2>
+      <h3>Here are the results of the survey:</h3>
+      <ul>
+        <li>Name: <span class="name"></span></li>
+        <li>Way to eat: <span class="food"></span></li>
+        <li>Type of music: <span class="music"></span>
+        <li>Color: <span class="color"></span></li>
+      </ul>
+      </div>
+    </div>
+  </body>
+</html>
+
+  <!-- <form action="/survey-handling-form-page" method="post">
+        <ul>
+          <li>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="user-name">
+          </li>
+          <li>
+            <label for="animal">Your Favorite Animal:</label>
+            <input id="animal" type="text" name="animal-answer">
+          </li>
+        </ul>
+        </form> -->
